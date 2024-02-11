@@ -1,0 +1,170 @@
+/*BASIC STYLES*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background: #D5DDDF;
+    color: #D8EEF3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(2, 1, 1, 0.2), rgba(2, 1, 1, 0.7)), url('../images/Background.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+h1{
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0 40px 0 0;
+    font-weight: 600;
+}
+button{
+    width: 310px;
+    height: 68px;
+
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: inherit;
+
+    color: #D8EEF3;
+    background-color: #182727;
+
+    border: none;
+    border-radius: 10px;
+
+    box-shadow: black 0px 1px 3px;
+
+    transition: 0.1s ease-in-out;
+}
+
+button:active{
+    background-color: #0f1818;
+    color: #abbbbe;
+
+    box-shadow: black 0px 1px 1px;
+}
+header p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header article{
+    display: block;
+
+    position: relative;
+    top: 25%;
+    left: 160px;
+
+    border: 2px solid red;
+}
+
+main article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 70px 0 0 0;
+}
+main h2{
+    font-size: 20px;
+    font-weight: 900;
+
+    margin: 0;
+}
+main p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*LOGO*/
+
+.logo-wrapper img{
+    width: 44px;
+    height: 44px;
+    margin: auto;
+}
+.logo-wrapper h1{
+    margin-top: 0px;
+}
+.logo-wrapper a{
+    margin: 0;
+}
+
+/*MENU*/
+
+#profile-button{
+    width: 68px;
+    height: 68px;
+    margin: 0 0 0 110px;
+}
+
+header nav{
+    display: inline-block;
+}
+
+/* FOOTER */
+
+footer {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    background-color: #182727;
+    color: #3C5148;
+
+    padding: 30px 90px 15px 90px;
+
+}
+footer img{
+    width: 35px;
+    height: 35px;
+}
+footer div{
+    display: flex;
+    flex-direction: inherit;
+
+    font-family: inherit;
+}
+
+footer h1{
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0 8px 10px;
+    margin: 0;
+}
+footer h3{
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+
+    margin: 0;
+    padding: 8px;
+}
+footer p{
+    margin: 0 0 0 40px;
+    padding: 8px;
+}

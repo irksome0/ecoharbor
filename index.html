@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/website-icon-bright.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <title>EcoHarbor</title>
+</head>
+
+<body>
+    <form onsubmit="displayResult();" class="calculator-wrapper" id="calculator-wrapper">
+        <div class="calculator-nav">
+            <h1>Калькулятор викидів co2</h1>
+            <img id="close-calculator-button" src="images/close.svg" onclick="hideCalculator();">
+        </div>
+        <div class="inputs-wrapper">
+            <div class="car-type-wrapper">
+                <h3>тип транспорту</h3>
+                <select name="car-types" id="car-types">
+                    <option value="car">Автомобіль</option>
+                    <option value="motorbike">Двохколісний тз.</option>
+                    <option value="van">Грузовий тз.</option>
+                </select>
+            </div>
+            <div class="distance-wrapper">
+                <h3>пройдена дистанція</h3>
+                <input type="number" name="distance" id="distance" placeholder="В кілометрах" value="0">
+            </div>
+            <div class="fuel-usage-wrapper">
+                <h3>Споживання палива</h3>
+                <input type="number" name="fuel-usage" id="fuel-usage" placeholder="12" value="0">
+            </div>
+            <div class="fuel-type-wrapper">
+                <h3>тип палива</h3>
+                <select name="fuel-type" id="fuel-type">
+                    <option value="diesel">Дизель</option>
+                    <option value="petrol">Бензин</option>
+                    <option value="gasoline">Газ</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" id="calculate-button"">обчислити</button>
+        <h4 id=" result-emission"></h4>
+    </form>
+    <div class="container">
+        <header>
+            <div class="header-wrapper">
+                <div class="logo-wrapper">
+                    <a href="index.html"><img id="logo" src="images/Logo.png"></a>
+                    <a href="index.html">
+                        <h1 class="logo-text">EcoHarbor</h1>
+                    </a>
+                </div>
+                <div class="menu-wrapper">
+                    <nav>
+                        <ul>
+                            <li><a id="calculator-button" onclick="displayCalculator();">КАЛЬКУЛЯТОР</a></li>
+                            <li><a id="news-button" onclick="scrollToNews();">НОВИНИ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <article>
+                <p>Даний проєкт ставить перед собою проблему обізнаності людей з навколишнім середовищем та його
+                    становищем.<br>
+                    Перевагою даного продукту перед іншими, що на відміну від більшості додатків,<br>
+                    незалежно від функціоналу для вирішення екологічних питань, стає можливість для користувачів
+                    відслідковувати найсвіжіші новини зі світу екології.
+                </p>
+            </article>
+        </header>
+        <article class="recommendations-wrapper">
+            <h1>ЩОДЕННА РЕКОМЕНДАЦІЯ</h1>
+            <div>
+                <p class="first-recommendation">
+                    Організуйте роботу таким чином,
+                    щоб зменшити викиди від транспорту, наприклад,
+                    сприяйте використанню громадського транспорту
+                    або організовуйте роботу з віддалених місць.</p>
+                <p class="second-recommendation">
+                    Розгляньте можливість переходу на відновлювальні джерела енергії,
+                    такі як сонячна чи вітрова енергія,
+                    щоб зменшити використання вуглецю.
+                </p>
+
+            </div>
+        </article>
+        <main>
+            <div id="news" class="news-announce">
+                <h1>Останні новини</h1>
+            </div>
+            <div class="odd-news-wrapper">
+                <article>
+                    <img src="images/FirstArticle.jpg">
+                    <div>
+                        <h2>Палаванські єпископи знову закликають припинити
+                            видобуток корисних копалин на
+                            "останньому екологічному рубежі" країни
+                        </h2>
+                        <p>
+                            Духовенство двох апостольських вікаріатів у Палавані,
+                            Філіппіни, знову закликає зупинити
+                            видобуток корисних копалин на
+                            "останньому екологічному рубежі" країни . . .
+                        </p>
+                        <button
+                            onclick="location.href=`https://www.vaticannews.va/en/church/news/2023-06/palawan-bishops-call-end-mining-last-frontier.html`;">Читати
+                            далі</button>
+                        <p class="news-url">
+                            vaticannews.va/en/church/news/2023-06/palawan-bishops-call-end-mining-last-frontier.html
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="news-wrapper">
+                <article>
+                    <div>
+                        <h2>4 найбільші екологічні проблеми на Філіппінах у 2023 році</h2>
+                        <p>
+                            Напередодні Конференції ООН з питань зміни клімату (COP28)
+                            зростає нагальна потреба у вирішенні кліматичної кризи, що триває у світі.
+                            Хоча діяльність на Глобальній Півночі
+                            здебільшого є передвісником кліматичної кризи . . .
+                        </p>
+                        <button
+                            onclick="location.href=`https://earth.org/environmental-issues-in-the-philippines/`;">Читати
+                            далі</button>
+                        <p class="news-url">earth.org/environmental-issues-in-the-philippines/</p>
+                    </div>
+                    <img src="images/SecondArticle.png">
+                </article>
+        </main>
+        <footer>
+            <div>
+                <img src="images/FooterLogo.png">
+                <h1>EcoHarbor inc.</h1>
+            </div>
+            <div>
+                <h3>&#169 All rights are reserved</h3>
+                <p>UNIVERSITY PROJECT</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script src="scripts/script.js"></script>
+
+</html>
