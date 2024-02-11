@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <form onsubmit="displayResult();" class="calculator-wrapper" id="calculator-wrapper">
+    <form onsubmit="displayResult();return false;" class="calculator-wrapper" id="calculator-wrapper">
         <div class="calculator-nav">
             <h1>Калькулятор викидів co2</h1>
             <img id="close-calculator-button" src="images/close.svg" onclick="hideCalculator();">
@@ -45,8 +45,8 @@
                 </select>
             </div>
         </div>
-        <button type="submit" id="calculate-button"">обчислити</button>
-        <h4 id=" result-emission"></h4>
+        <button type="submit" id="calculate-button">обчислити</button>
+        <h4 id="result-emission"></h4>
     </form>
     <div class="container">
         <header>
