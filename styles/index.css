@@ -1,0 +1,434 @@
+@import url("style.css");
+@import url("calculator.css");
+
+header p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header article{
+    display: block;
+    width: 50%;
+
+    position: relative;
+    top: 25%;
+    left: 160px;
+}
+
+main article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 70px 0 0 0;
+}
+main h2{
+    font-size: 20px;
+    font-weight: 900;
+
+    margin: 0;
+}
+main p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container{
+    min-height: 100%;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+.logo-wrapper{
+    width: 110px;
+    height: 68px;
+
+    text-align: center;
+    font-weight: 600;
+
+}
+.header-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 20px;
+
+    margin: 60px 80px 0px 80px;
+}
+
+#news-button{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#calculator-button{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.menu-wrapper nav{
+    margin: 15px 0 0 0;    
+}
+
+/*RECOMMENDATIONS*/
+
+.recommendations-wrapper{
+    width: 100%;
+    max-height: 400px;
+    min-height: 214px;
+    background: linear-gradient(90deg, #3c8136 0%, #24966e 100%);
+    padding: 30px 0 0px 0;
+
+    text-align: center;
+}
+
+.recommendations-wrapper h1{
+    margin: 0 0 30px 0;
+
+    font-weight: 400;
+    font-size: 24px;
+
+}
+.recommendations-wrapper div{
+    display: inline-flex;
+    flex-direction: row;
+
+    font-weight: 700;
+    color: #182727;
+
+    padding: 0 70px 0 70px;
+
+    border-right: #182727 solid 3px;
+    border-left: #182727 solid 3px;
+
+}
+
+.first-recommendation{
+    width: 440px;
+    margin: 0 100px 0 0;
+    display: block;
+}
+.second-recommendation{
+    width: 440px;
+    margin: 0 0 0 100px;
+    display: block;
+}
+
+/* NEWS */
+
+.news-announce{
+    background-color: #182727;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+.news-announce h1{
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+.news-wrapper{
+    background: linear-gradient(270deg, #3c8136 0%, #24966e 100%);
+    padding: 0 0 20px 0;
+}
+.news-wrapper div{
+    color: #D8EEF3;
+
+    width: 600px;
+    text-align: right;
+    text-transform: uppercase;
+
+    margin: 40px 50px 0 0;
+}
+.news-wrapper p{
+    margin: 16px 0 20px 0;
+}
+
+.odd-news-wrapper{
+    background: linear-gradient(90deg, #D5DDDF 0%, #b4b6b6 100%);
+    padding: 0 0 20px 0;
+}
+.odd-news-wrapper h1{
+    color: #3C5148;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 300;
+
+    margin: 18px;
+}
+.odd-news-wrapper div{
+    color: #182727;
+
+    width: 600px;
+    text-align: left;
+    text-transform: uppercase;
+
+    margin: 40px 0 0 50px;
+}
+.odd-news-wrapper h2{
+    font-size: 20px;
+    font-weight: 900;
+
+    margin: 0;
+}
+.odd-news-wrapper p{
+    margin: 16px 0 20px 0;
+}
+.news-url{
+    font-size: 12px;
+    color:#3C5148;
+}
+
+@media (max-width: 1230px){
+    .recommendations-wrapper div{
+        padding: 0 50px 0 50px;
+    }
+    .first-recommendation{
+        margin: 0 80px 0 0;
+    }
+    .second-recommendation{
+        margin: 0 0 0 80px;
+    }
+}
+@media (max-width: 1154px){
+    .first-recommendation{
+        margin: 0 50px 0 0;
+    }
+    .second-recommendation{
+        margin: 0 0 0 50px;
+    }
+    .news-wrapper div, .odd-news-wrapper div{
+        width: 450px;
+        margin-top: 20px;
+    }
+    .news-wrapper h2, .odd-news-wrapper h2{
+        font-size: 16px;
+    }
+    .news-wrapper img, .odd-news-wrapper img{
+        width: 400px;
+        height: 250px;
+    }
+    .news-wrapper p, .odd-news-wrapper p{
+        font-size: 12px;
+    }
+    .news-url p{
+        font-size: 8px;
+    }
+    
+    button{
+        width: 260px;
+        height: 50px;
+
+        font-size: 20px;
+    }
+}
+@media (max-width: 1095px){
+    .recommendations-wrapper div{
+        padding: 0 20px 0 20px;
+    }
+    .first-recommendation{
+        margin: 0 20px 0 0;
+    }
+    .second-recommendation{
+        margin: 0 0 0 20px;
+    }
+}
+@media (max-width: 974px){
+    .recommendations-wrapper div{
+        flex-direction: column;
+    }
+    .first-recommendation, .second-recommendation{
+        margin: 0 0 30px 0;
+    }
+}
+@media (max-width: 905px){
+    main article{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .news-wrapper article{
+        flex-direction: column-reverse;
+
+    }
+    .news-wrapper div, .odd-news-wrapper div{
+        width: 600px;
+        margin: 20px 0 0 0px;
+
+        text-align: left;
+    }
+    footer{
+        font-size: 12px;
+
+        padding: 30px 50px 15px 50px;
+    }
+    footer img{
+        width: 25px;
+        height: 25px;
+    }
+    .calculator-wrapper{
+        top: 25%;
+        transform: translate(-50%, -25%);
+
+        width: 60vw;
+        height: auto;
+        
+        padding: 50px 100px 50px 100px;
+    }
+    .calculator-wrapper h1{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .inputs-wrapper{
+        grid-template-columns: auto;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+}
+@media (max-width: 605px) {
+    header article{
+        width: 70%;
+        text-align: center;
+
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .news-wrapper div, .odd-news-wrapper div{
+        width: 450px;
+    }
+    .header-wrapper{
+        flex-direction: column;
+
+        align-items: center;
+    }
+    .menu-wrapper{
+        display: flex;
+        justify-content: space-around;
+        
+        width: 100%;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    ul{
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+    li{
+        margin: 20px 0 0 0;
+    }
+    a{
+        margin: 0;
+    }
+    .calculator-wrapper{
+        top: 0;
+        left: 0;
+        transform: translate(0);
+
+        width: calc(100vw - 99px);
+        height: 100svh;
+        
+        padding: 50px;
+        border-radius: 0;
+    }
+}
+@media (max-width: 495px){
+    h1{
+        font-size: 16px;
+    }
+    .header-wrapper a{
+        font-size: 16px;
+    }
+    header p{
+        font-size: 18px;
+    }
+    .recommendations-wrapper{
+        max-height: none;
+    }
+    .recommendations-wrapper h1{
+        font-size: 20px;
+    }
+    .recommendations-wrapper div{
+        font-size: 14px;
+
+        border-left: 0;
+        border-right: 0;
+
+        padding: 0;
+    }
+    .first-recommendation, .second-recommendation{
+        width: auto;
+    }
+    .news-announce h1{
+        font-size: 24px;
+    }
+    .calculator-wrapper h1{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .calculator-wrapper h3{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    #close-calculator-button{
+        width: 20px;
+        height: 20px;
+    }
+    #result-emission{
+        font-size: 16px;
+    }
+}
+@media (max-width: 458px){
+    header p{
+        font-size: 16px;
+    }
+    .news-wrapper div, .odd-news-wrapper div{
+        width: auto;
+        margin-top: 20px;
+    }
+    .news-wrapper h2, .odd-news-wrapper h2{
+        font-size: 14px;
+    }
+    .news-wrapper img, .odd-news-wrapper img{
+        width: 340px;
+        height: 210px;
+    }
+    .news-wrapper p, .odd-news-wrapper p{
+        font-size: 12px;
+    }
+    .news-url p{
+        font-size: 10px;
+    }
+    footer{
+        font-size: 10px;
+
+        padding: 20px 30px 15px 30px;
+    }
+    .calculator-wrapper{
+        width: calc(100svw - 90px);
+        padding: 50px 45px 50px 45px;
+    }
+    .news-wrapper div, .odd-news-wrapper div{
+        text-align: center;
+    }
+}
+@media (max-height:700px){
+    .calculator-wrapper{
+        padding: 20px 45px 50px 45px;
+    }
+}
